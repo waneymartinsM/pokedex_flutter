@@ -3,17 +3,10 @@ import 'package:pokedex_flutter/app/modules/login/presentation/pages/sign_in_pag
 
 class LoginModule extends Module {
   @override
-  void binds(i) {
-
-  }
+  void binds(i) {}
 
   @override
   void routes(r) {
-    ChildRoute('/', child: (context) => const SignInPage());
+    r.child('/', child: (context) => const SignInPage());
   }
-
-  // @override
-  // final List<ModularRoute> routes = [
-  //   ChildRoute('/', child: (context, args) => const SignInPage()),
-  // ];
 }

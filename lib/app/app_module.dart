@@ -2,23 +2,11 @@ import 'package:flutter_modular/flutter_modular.dart';
 import 'package:pokedex_flutter/app/modules/login/login_module.dart';
 
 class AppModule extends Module {
-
   @override
-  void binds(i) {
-
-  }
-  // @override
-  // final List<Bind> binds = [
-  // ];
+  void binds(i) {}
 
   @override
   void routes(r) {
-    ModuleRoute('/', module: LoginModule());
-    //    r.child('/', child: (context) => HomePage()),
+    r.module('/', module: LoginModule());
   }
-  // @override
-  // final List<ModularRoute> routes = [
-  //   ModuleRoute('/', module: LoginModule()),
-  // ];
-
 }
